@@ -1,11 +1,12 @@
-r=int(input("enter the radius:"))
-print("area of circle=",3.14*r*r)
-l=int(input("enter length of rectangle:"))
-b=int(input("enter base of rectangle:"))
-print("area of rectangle=",l*b)
-h=int(input("enter height of triangle:"))
-
-tb=int(input("enter breadth of triangle:"))
-print("area of triangle=",0.5*tb*h)
-
-
+a=int(input("enter the sides of square"))
+ar=lambda b:b*b
+print("area of square=",ar(a))
+a=int(input("enter the length of rectangle"))
+c=int(input("enter the breadth of rectangle"))
+ar=lambda b,d:b*d
+print("area of rectangle=",ar(a,c))
+a=int(input("enter the height of triangle"))
+c=int(input("enter base of triangle"))
+ar=lambda b,d:0.5*b*d
+print("area of triangle =",ar(a,c))
+      
